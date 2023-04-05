@@ -28,21 +28,33 @@
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor>
+                     <font>
+                        <Font name="Arial" size="13.0" />
+                     </font>
                   </Button>
                   <Button mnemonicParsing="false" style="-fx-background-color: #fcf8f0;" text="Advanced Encryption Standard">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor>
+                     <font>
+                        <Font name="Arial" size="13.0" />
+                     </font>
                   </Button>
                   <Button mnemonicParsing="false" prefHeight="26.0" style="-fx-background-color: #fcf8f0;" text="RSA">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor>
+                     <font>
+                        <Font name="Arial" size="13.0" />
+                     </font>
                   </Button>
                 <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="270.0" style="-fx-background-color: #fcf8f0;" text="Hashing">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor>
+                     <font>
+                        <Font name="Arial" size="13.0" />
+                     </font>
                   </Button>
               </buttons>
             </ButtonBar>
@@ -107,7 +119,7 @@
          <children>
             <Button layoutX="40.0" layoutY="572.0" mnemonicParsing="false" prefHeight="7.0" prefWidth="117.0" text="Credits">
                <font>
-                  <Font size="15.0" />
+                  <Font name="Arial" size="13.0" />
                </font>
                <cursor>
                   <Cursor fx:constant="HAND" />
