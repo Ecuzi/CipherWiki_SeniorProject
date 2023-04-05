@@ -2,6 +2,7 @@ package interfaces.dataencryptionproject_sp25;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
@@ -10,10 +11,9 @@ import java.io.IOException;
 public class Main extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("HomePage.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 320, 240);
+        Parent root = FXMLLoader.load(getClass().getResource("/HomePage.fxml"));
         stage.setTitle("Cipher Wiki!");
-        stage.setScene(scene);
+        stage.setScene(new Scene(root,968,780));
         stage.show();
     }
 
