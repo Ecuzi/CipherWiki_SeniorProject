@@ -11,19 +11,19 @@ import java.util.Base64;
 public class AES_Encryption {
     AES_Encryption(){}
 
-    AES_Encryption(String plainText) throws NoSuchAlgorithmException, IllegalBlockSizeException, InvalidKeyException,
-            BadPaddingException, NoSuchPaddingException {
-        System.out.println("This is the message you gave: " + plainText);
-
-        SecretKey key = generateKey();
-        IvParameterSpec ivParameterSpec = generateIV();
-        String algorithm = "AES/ECB/PKCS5Padding";
-
-        String cipherText = AES_Encryption.encrypt(algorithm, plainText, key);
-        System.out.println("What the message looks like now via encryption: "+ cipherText);
-        plainText = AES_Encryption.decrypt(algorithm, cipherText, key);
-        System.out.println("We can return the text back: " + plainText + "\nWere we successful? ");
-    }
+//    AES_Encryption(String plainText) throws NoSuchAlgorithmException, IllegalBlockSizeException, InvalidKeyException,
+//            BadPaddingException, NoSuchPaddingException {
+//        System.out.println("This is the message you gave: " + plainText);
+//
+//        SecretKey key = generateKey();
+//        IvParameterSpec ivParameterSpec = generateIV();
+//        String algorithm = "AES/ECB/PKCS5Padding";
+//
+//        String cipherText = AES_Encryption.encrypt(algorithm, plainText, key);
+//        System.out.println("What the message looks like now via encryption: "+ cipherText);
+//        plainText = AES_Encryption.decrypt(algorithm, cipherText, key);
+//        System.out.println("We can return the text back: " + plainText + "\nWere we successful? ");
+//    }
     public static SecretKey generateKey() throws NoSuchAlgorithmException{
         KeyGenerator keygen = KeyGenerator.getInstance("AES");
         keygen.init(128);
