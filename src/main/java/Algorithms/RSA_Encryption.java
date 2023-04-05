@@ -27,11 +27,8 @@ public class RSA_Encryption {
     }
     /* Encrypt Message */
     static String encryptRSA(String plainText, PublicKey publicKey)
-            throws IllegalBlockSizeException, BadPaddingException, InvalidKeyException {
-        Cipher encryptCipher;{ try {  encryptCipher = Cipher.getInstance("RSA");
-        } catch (NoSuchAlgorithmException | NoSuchPaddingException e) {
-            throw new RuntimeException(e); }
-        }
+            throws IllegalBlockSizeException, BadPaddingException, InvalidKeyException, NoSuchPaddingException, NoSuchAlgorithmException {
+        Cipher encryptCipher = Cipher.getInstance("RSA");
         byte[] secretMessageBytes = plainText.getBytes(StandardCharsets.UTF_8);  // Interpret the plainText given by the user as an array of bytes
         byte[] encryptedMessageBytes = encryptCipher.doFinal(secretMessageBytes);// Finalize the bytes into a single-part operation
 

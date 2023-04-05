@@ -12,7 +12,7 @@ public class AES_Encryption {
     AES_Encryption(){}
 
     AES_Encryption(String plainText) throws NoSuchAlgorithmException, IllegalBlockSizeException, InvalidKeyException,
-            BadPaddingException, InvalidAlgorithmParameterException, NoSuchPaddingException {
+            BadPaddingException, NoSuchPaddingException {
         System.out.println("This is the message you gave: " + plainText);
 
         SecretKey key = generateKey();
@@ -35,7 +35,7 @@ public class AES_Encryption {
         return new IvParameterSpec(iv);
     }
     public static String encrypt(String algorithm, String plainText, SecretKey key)
-        throws NoSuchAlgorithmException, NoSuchPaddingException, InvalidAlgorithmParameterException, InvalidKeyException, BadPaddingException, IllegalBlockSizeException{
+        throws NoSuchAlgorithmException, NoSuchPaddingException, InvalidKeyException, BadPaddingException, IllegalBlockSizeException{
 
         Cipher cipher = Cipher.getInstance(algorithm);
         cipher.init(Cipher.ENCRYPT_MODE,key);
@@ -43,7 +43,7 @@ public class AES_Encryption {
         return Base64.getEncoder().encodeToString(cipherText);
     }
     static String decrypt(String algorithm, String cipherText, SecretKey key)
-            throws NoSuchAlgorithmException, NoSuchPaddingException, InvalidAlgorithmParameterException, InvalidKeyException, BadPaddingException, IllegalBlockSizeException{
+            throws NoSuchAlgorithmException, NoSuchPaddingException, InvalidKeyException, BadPaddingException, IllegalBlockSizeException{
 
         Cipher cipher = Cipher.getInstance(algorithm);
         cipher.init(Cipher.DECRYPT_MODE,key);
