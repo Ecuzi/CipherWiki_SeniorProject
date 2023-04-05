@@ -103,7 +103,7 @@
             </Text>
             <ImageView fitHeight="199.0" fitWidth="379.0" layoutX="104.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@Images/Screen%20Shot%202023-04-04%20at%201.27.49%20AM.png" />
+                  <Image url="@Images/Home1.png" />
                </image>
             </ImageView>
             <Text layoutX="42.0" layoutY="315.0" lineSpacing="2.5" strokeType="OUTSIDE" strokeWidth="0.0" text="&#9;Cryptography, the science of hiding messages and their meaning from prying eyes, has been around since the invention of writing. Its origins can be traced back to ancient Egypt, where the first encryption scheme involved a simple method of letter substitution. Today, encryption is a fundamental part of our daily lives, occurring every time a computer connects to the internet, and it happens without most people realizing it.  &#10;&#10;&#9;Encryption is essential to protect data transferred between two parties from being intercepted by cybercriminals. There are two types of encryption algorithms: symmetric and asymmetric. Symmetric encryption uses a private key to encrypt and decrypt data, while asymmetric encryption uses a separate public and private key. Decrypting an encrypted message can take a very long time, with some encryption methods taking quintillion (a billion billion) years to crack without prior knowledge of the key." wrappingWidth="502.615966796875">
