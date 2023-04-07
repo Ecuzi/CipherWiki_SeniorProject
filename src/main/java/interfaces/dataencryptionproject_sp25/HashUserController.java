@@ -9,36 +9,22 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.stage.Stage;
 
-
-
-
-
 import java.io.IOException;
 
-public class RSAController {
-
+public class HashUserController {
 
     @FXML
-    void TryAction(ActionEvent event) throws IOException {
-        Parent guestViewParent = FXMLLoader.load(getClass().getResource("/RSAUser.fxml"));
-        Scene guestScene = new Scene(guestViewParent);
-
-        Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
-
-        window.setScene(guestScene);
-        window.show();
-    }
+    private Button backButton;
 
     @FXML
     void backButtonAction(ActionEvent event) throws IOException {
-        Parent guestViewParent = FXMLLoader.load(getClass().getResource("/HomePage.fxml"));
+        Parent guestViewParent = FXMLLoader.load(getClass().getResource("/Hash.fxml"));
         Scene guestScene = new Scene(guestViewParent);
 
         Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
 
         window.setScene(guestScene);
         window.show();
-
     }
 
 }

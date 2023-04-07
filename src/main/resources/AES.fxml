@@ -25,17 +25,17 @@
                   <Font name="Arial Rounded MT Bold" size="30.0" />
                </font>
             </Text>
-            <ImageView fitHeight="37.0" fitWidth="56.0" layoutX="25.0" layoutY="97.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="37.0" fitWidth="56.0" layoutX="25.0" layoutY="98.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@Images/undo-back-return-button-png-3.png" />
                </image>
             </ImageView>
-            <Button layoutX="24.0" layoutY="97.0" mnemonicParsing="false" opacity="0.0" prefHeight="37.0" prefWidth="37.0" text="Button">
+            <Button fx:id="backButton" layoutX="24.0" layoutY="98.0" mnemonicParsing="false" onAction="#backButtonAction" opacity="0.0" prefHeight="37.0" prefWidth="37.0" text="Button">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
-            <Button layoutX="677.0" layoutY="99.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="90.0" style="-fx-background-color: #FFFFFF;" text="Try It Out">
+            <Button fx:id="tryButton" layoutX="677.0" layoutY="99.0" mnemonicParsing="false" onAction="#TryAction" prefHeight="33.0" prefWidth="90.0" style="-fx-background-color: #FFFFFF;" text="Try It Out">
                <font>
                   <Font name="Arial Bold" size="14.0" />
                </font>
@@ -50,7 +50,7 @@
       </AnchorPane>
    </top>
    <center>
-      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #FFFFFF;" BorderPane.alignment="CENTER">
+      <AnchorPane onMousePressed="#backButtonAction" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #FFFFFF;" BorderPane.alignment="CENTER">
          <children>
             <ImageView fitHeight="301.0" fitWidth="597.0" layoutX="103.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
                <image>

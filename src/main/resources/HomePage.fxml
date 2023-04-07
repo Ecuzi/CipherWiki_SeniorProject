@@ -24,7 +24,7 @@
             </Rectangle>
             <ButtonBar layoutX="-13.0" layoutY="94.0" prefHeight="43.0" prefWidth="972.0">
               <buttons>
-                  <Button mnemonicParsing="false" style="-fx-background-color: #fcf8f0;" text="Caesar Cipher">
+                  <Button mnemonicParsing="false" onAction="#CeaserButton" style="-fx-background-color: #fcf8f0;" text="Caesar Cipher">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor>
@@ -32,7 +32,7 @@
                         <Font name="Arial" size="13.0" />
                      </font>
                   </Button>
-                  <Button mnemonicParsing="false" style="-fx-background-color: #fcf8f0;" text="Advanced Encryption Standard">
+                  <Button mnemonicParsing="false" onAction="#AESAction" style="-fx-background-color: #fcf8f0;" text="Advanced Encryption Standard">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor>
@@ -40,7 +40,7 @@
                         <Font name="Arial" size="13.0" />
                      </font>
                   </Button>
-                  <Button mnemonicParsing="false" prefHeight="26.0" style="-fx-background-color: #fcf8f0;" text="RSA">
+                  <Button mnemonicParsing="false" onAction="#RSAAction" prefHeight="26.0" style="-fx-background-color: #fcf8f0;" text="RSA">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor>
@@ -48,7 +48,7 @@
                         <Font name="Arial" size="13.0" />
                      </font>
                   </Button>
-                <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="270.0" style="-fx-background-color: #fcf8f0;" text="Hashing">
+                <Button mnemonicParsing="false" onAction="#HashingAction" prefHeight="26.0" prefWidth="270.0" style="-fx-background-color: #fcf8f0;" text="Hashing">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor>
@@ -98,7 +98,7 @@
          <children>
             <Text layoutX="188.0" layoutY="272.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data Encryption">
                <font>
-                  <Font name="Comic Sans MS" size="26.0" />
+                  <Font name="Arial" size="26.0" />
                </font>
             </Text>
             <ImageView fitHeight="199.0" fitWidth="379.0" layoutX="104.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
@@ -117,7 +117,7 @@
    <right>
       <AnchorPane prefHeight="638.0" prefWidth="195.0" BorderPane.alignment="CENTER">
          <children>
-            <Button layoutX="40.0" layoutY="572.0" mnemonicParsing="false" prefHeight="7.0" prefWidth="117.0" text="Credits">
+            <Button layoutX="40.0" layoutY="572.0" mnemonicParsing="false" onAction="#CreditAction" prefHeight="7.0" prefWidth="117.0" text="Credits">
                <font>
                   <Font name="Arial" size="13.0" />
                </font>
