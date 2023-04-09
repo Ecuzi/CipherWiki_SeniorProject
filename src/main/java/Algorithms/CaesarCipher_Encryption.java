@@ -1,9 +1,10 @@
 package Algorithms;
 
 public class CaesarCipher_Encryption {
-    CaesarCipher_Encryption(){}
+    public CaesarCipher_Encryption(){}
 
-    static String encrypt(String plainText, int key){
+    public String encrypt(String plainText, int key){
+        key = key % 26;
         StringBuilder encrypted = new StringBuilder(); char index;
         for(int i = 0; i < plainText.length();i++){
             index = plainText.charAt(i);
@@ -19,7 +20,8 @@ public class CaesarCipher_Encryption {
         }
         return encrypted.toString();
     }
-    static boolean decrypt(String encrypted, String cipherText, double key){
+    public String decrypt(String cipherText, int key){
+        key = key % 26;
         StringBuilder decrypted = new StringBuilder(); char index;
         for(int i = 0; i < cipherText.length();i++){
             index = cipherText.charAt(i);
@@ -33,6 +35,9 @@ public class CaesarCipher_Encryption {
                 decrypted.append(index);
             } else decrypted.append(index);
         }
-        return decrypted.equals(encrypted);
+        return decrypted.toString();
     }
+
+
+
 }

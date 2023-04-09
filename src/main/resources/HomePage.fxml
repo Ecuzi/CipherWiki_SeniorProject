@@ -13,16 +13,16 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="780.0" prefWidth="968.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="interfaces.dataencryptionproject_sp25.HomeController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="793.0" prefWidth="1001.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="interfaces.dataencryptionproject_sp25.HomeController">
    <top>
       <AnchorPane prefHeight="77.0" prefWidth="722.0" style="-fx-background-color: #5173c9;" BorderPane.alignment="CENTER">
          <children>
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8d9dab" height="52.0" layoutX="-28.0" layoutY="90.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="996.0">
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8d9dab" height="52.0" layoutX="-28.0" layoutY="90.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="1029.0">
                <effect>
                   <InnerShadow radius="25.4775" width="82.91" />
                </effect>
             </Rectangle>
-            <ButtonBar layoutX="-13.0" layoutY="94.0" prefHeight="43.0" prefWidth="972.0">
+            <ButtonBar layoutX="-13.0" layoutY="94.0" prefHeight="43.0" prefWidth="1007.0">
               <buttons>
                   <Button mnemonicParsing="false" onAction="#CeaserButton" style="-fx-background-color: #fcf8f0;" text="Caesar Cipher">
                      <cursor>
@@ -58,7 +58,7 @@
                   </Button>
               </buttons>
             </ButtonBar>
-            <Text layoutX="396.0" layoutY="58.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Cipher Wiki" textAlignment="CENTER">
+            <Text layoutX="401.0" layoutY="61.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Cipher Wiki" textAlignment="CENTER">
                <font>
                   <Font name="Arial Rounded MT Bold" size="36.0" />
                </font>
@@ -70,9 +70,9 @@
       </AnchorPane>
    </top>
    <left>
-      <AnchorPane prefHeight="638.0" prefWidth="215.0" BorderPane.alignment="CENTER">
+      <AnchorPane prefHeight="651.0" prefWidth="236.0" BorderPane.alignment="CENTER">
          <children>
-            <ImageView fitHeight="146.0" fitWidth="211.0" layoutX="2.0" layoutY="198.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="146.0" fitWidth="211.0" layoutX="12.0" layoutY="198.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@Images/Home2.png" />
                </image>
@@ -80,7 +80,7 @@
                   <DropShadow />
                </effect>
             </ImageView>
-            <Text layoutX="50.0" layoutY="167.0" strokeType="OUTSIDE" strokeWidth="0.0" text="  Fun Fact &#10; " wrappingWidth="120.04896545410156">
+            <Text layoutX="53.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" text="  Fun Fact &#10; " wrappingWidth="120.04896545410156">
                <font>
                   <Font name="Arial" size="21.0" />
                </font>
@@ -96,17 +96,17 @@
    <center>
       <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #FFFFFF;" BorderPane.alignment="CENTER">
          <children>
-            <Text layoutX="188.0" layoutY="272.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data Encryption">
+            <Text layoutX="166.0" layoutY="272.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data Encryption">
                <font>
                   <Font name="Arial" size="26.0" />
                </font>
             </Text>
-            <ImageView fitHeight="199.0" fitWidth="379.0" layoutX="104.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="199.0" fitWidth="379.0" layoutX="82.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@Images/Home1.png" />
                </image>
             </ImageView>
-            <Text layoutX="42.0" layoutY="315.0" lineSpacing="2.5" strokeType="OUTSIDE" strokeWidth="0.0" text="&#9;Cryptography, the science of hiding messages and their meaning from prying eyes, has been around since the invention of writing. Its origins can be traced back to ancient Egypt, where the first encryption scheme involved a simple method of letter substitution. Today, encryption is a fundamental part of our daily lives, occurring every time a computer connects to the internet, and it happens without most people realizing it.  &#10;&#10;&#9;Encryption is essential to protect data transferred between two parties from being intercepted by cybercriminals. There are two types of encryption algorithms: symmetric and asymmetric. Symmetric encryption uses a private key to encrypt and decrypt data, while asymmetric encryption uses a separate public and private key. Decrypting an encrypted message can take a very long time, with some encryption methods taking quintillion (a billion billion) years to crack without prior knowledge of the key." wrappingWidth="502.615966796875">
+            <Text layoutX="15.0" layoutY="312.0" lineSpacing="2.5" strokeType="OUTSIDE" strokeWidth="0.0" text="&#9;Cryptography, the science of hiding messages and their meaning from prying eyes, has been around since the invention of writing. Its origins can be traced back to ancient Egypt, where the first encryption scheme involved a simple method of letter substitution. Today, encryption is a fundamental part of our daily lives, occurring every time a computer connects to the internet, and it happens without most people realizing it.  &#10;&#10;&#9;Encryption is essential to protect data transferred between two parties from being intercepted by cybercriminals. There are two types of encryption algorithms: symmetric and asymmetric. Symmetric encryption uses a private key to encrypt and decrypt data, while asymmetric encryption uses a separate public and private key. Decrypting an encrypted message can take a very long time, with some encryption methods taking quintillion (a billion billion) years to crack without prior knowledge of the key." wrappingWidth="502.615966796875">
                <font>
                   <Font name="Arial" size="16.0" />
                </font>
@@ -115,9 +115,9 @@
       </AnchorPane>
    </center>
    <right>
-      <AnchorPane prefHeight="638.0" prefWidth="195.0" BorderPane.alignment="CENTER">
+      <AnchorPane prefHeight="651.0" prefWidth="236.0" BorderPane.alignment="CENTER">
          <children>
-            <Button layoutX="40.0" layoutY="572.0" mnemonicParsing="false" onAction="#CreditAction" prefHeight="7.0" prefWidth="117.0" text="Credits">
+            <Button layoutX="56.0" layoutY="575.0" mnemonicParsing="false" onAction="#CreditAction" prefHeight="31.0" prefWidth="125.0" text="Credits">
                <font>
                   <Font name="Arial" size="13.0" />
                </font>
@@ -125,7 +125,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
-            <Text layoutX="16.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="&#10;&#10;&#10;&#10;Senior Project &#10;&#10;Sharon Perry - 25&#10;&#10;Spring 2023&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;  Ethan Fitzgerald   &#10;&#10;Anthony Quarshie" textAlignment="CENTER" wrappingWidth="164.802734375">
+            <Text layoutX="36.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="&#10;&#10;&#10;&#10;Senior Project &#10;&#10;Sharon Perry - 25&#10;&#10;Spring 2023&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;  Ethan Fitzgerald   &#10;&#10;Anthony Quarshie" textAlignment="CENTER" wrappingWidth="164.802734375">
                <font>
                   <Font name="Arial" size="15.0" />
                </font>

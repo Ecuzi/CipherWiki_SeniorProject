@@ -9,7 +9,7 @@ import java.security.SecureRandom;
 import java.util.Base64;
 
 public class AES_Encryption {
-    AES_Encryption(){}
+   public AES_Encryption(){}
 
 //    AES_Encryption(String plainText) throws NoSuchAlgorithmException, IllegalBlockSizeException, InvalidKeyException,
 //            BadPaddingException, NoSuchPaddingException {

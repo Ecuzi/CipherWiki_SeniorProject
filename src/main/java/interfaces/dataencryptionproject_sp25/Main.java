@@ -13,7 +13,7 @@ public class Main extends Application {
     public void start(Stage stage) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("/HomePage.fxml"));
         stage.setTitle("Cipher Wiki!");
-        stage.setScene(new Scene(root,968,780));
+        stage.setScene(new Scene(root,1001,793));
         stage.show();
     }
 
