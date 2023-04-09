@@ -132,6 +132,11 @@
                   <InnerShadow height="12.0" radius="5.5" width="12.0" />
                </effect>
             </TextArea>
+            <Label alignment="CENTER" layoutX="177.0" layoutY="228.0" prefHeight="27.0" prefWidth="105.0" text="Ciphertext">
+               <font>
+                  <Font name="Arial" size="20.0" />
+               </font>
+            </Label>
          </children></AnchorPane>
    </center>
 </BorderPane>
