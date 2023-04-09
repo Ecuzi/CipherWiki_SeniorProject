@@ -11,6 +11,8 @@ import java.util.Base64;
 public class RSA_Encryption {
     public PublicKey x;
     public PrivateKey y;
+    public String pubkey;
+    public String privkey;
 
     public RSA_Encryption() throws NoSuchAlgorithmException, IllegalBlockSizeException, BadPaddingException, InvalidKeyException, NoSuchPaddingException {
 
@@ -21,6 +23,8 @@ public class RSA_Encryption {
         PublicKey publicKey = pair.getPublic();
         x = publicKey;
         y = privateKey;
+        pubkey = String.valueOf(publicKey.getEncoded());
+        privkey = String.valueOf(privateKey.getEncoded());
     }
 
 

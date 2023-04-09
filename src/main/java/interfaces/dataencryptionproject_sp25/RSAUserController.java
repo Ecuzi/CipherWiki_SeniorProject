@@ -12,6 +12,7 @@ import javafx.scene.control.*;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.nio.charset.StandardCharsets;
 import java.security.InvalidKeyException;
 import java.security.NoSuchAlgorithmException;
 
@@ -77,12 +78,17 @@ public class RSAUserController {
             return;
         }
 
+        if(!PrivKey.getText().isBlank()) {
+            label1.setText("Please Encrypt First");
+            return;
+        }
+
         String plainT = plainText.getText();
 
         Decrypt.setText(plainT);
         Decrypt.setWrapText(true);
 
-        PrivKey.setText(String.valueOf(Cipher.y));
+        PrivKey.setText(String.valueOf(Cipher.privkey));
         PrivKey.setWrapText(true);
 
     }
@@ -94,13 +100,27 @@ public class RSAUserController {
             label1.setText("Please Enter Plaintext");
             return;
         }
+        if(plainText.getText().getBytes().length > 245 ) {
+            label1.setText("Plaintext is Too Large");
+            return;
+        }
+        label1.setText("");
         String plainT = plainText.getText();
+
+        Encrypt.setText("");
+        PrivKey.setText("");
+        PubKey.setText("");
+        PrivKey.setText("");
+        Decrypt.setText("");
 
         Encrypt.setText(Cipher.encryptRSA(plainT, Cipher.x));
         Encrypt.setWrapText(true);
 
 
-        PubKey.setText(String.valueOf(Cipher.x));
+
+
+
+        PubKey.setText(String.valueOf(Cipher.pubkey));
         PubKey.setWrapText(true);
     }
 

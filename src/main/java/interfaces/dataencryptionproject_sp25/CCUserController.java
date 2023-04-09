@@ -76,6 +76,9 @@ public class CCUserController {
         if(!isNumber(key.getText())) {
             label1.setText("Please Only Enter Numbers for Key");
             return;
+        } else if (Integer.parseInt(key.getText()) >= 5000) {
+            label1.setText("Please Use Numbers less than 5000");
+            return;
         }
 
         int key1 = Integer.parseInt(key.getText());
@@ -89,6 +92,8 @@ public class CCUserController {
             DisplayArea.setText(Cipher.decrypt(plainT, key1));
 
         }
+        DisplayArea.setWrapText(true);
+        label1.setText("");
     }
 
     @FXML
@@ -105,6 +110,9 @@ public class CCUserController {
         if(!isNumber(key.getText())) {
             label1.setText("Please Only Enter Numbers for Key");
             return;
+        } else if (Integer.parseInt(key.getText()) >= 5000) {
+            label1.setText("Please Use Numbers less than 5000");
+            return;
         }
         int key1 = Integer.parseInt(key.getText());
 
@@ -118,6 +126,8 @@ public class CCUserController {
             DisplayArea.setText(Cipher.encrypt(plainT, key1));
 
         }
+        DisplayArea.setWrapText(true);
+        label1.setText("");
     }
 
 

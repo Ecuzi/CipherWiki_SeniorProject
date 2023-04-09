@@ -48,7 +48,7 @@
       <InnerShadow />
    </effect>
    <center>
-      <AnchorPane fx:id="txtonlyLabel" onMousePressed="#backButtonAction" prefHeight="525.0" prefWidth="802.0" style="-fx-background-color: #FFFFFF;" BorderPane.alignment="CENTER">
+      <AnchorPane prefHeight="525.0" prefWidth="802.0" style="-fx-background-color: #FFFFFF;" BorderPane.alignment="CENTER">
          <children>
             <Label layoutX="30.0" layoutY="59.0" prefHeight="27.0" prefWidth="105.0" text="Plaintext">
                <font>
@@ -90,7 +90,7 @@
                   <InnerShadow height="3.31" radius="3.365" width="12.15" />
                </effect>
             </Button>
-            <TextArea fx:id="Encrypt" layoutX="88.0" layoutY="270.0" prefHeight="221.0" prefWidth="283.0">
+            <TextArea fx:id="Encrypt" editable="false" layoutX="88.0" layoutY="270.0" prefHeight="221.0" prefWidth="283.0">
                <font>
                   <Font name="Arial" size="20.0" />
                </font>
@@ -98,7 +98,7 @@
                   <InnerShadow height="12.0" radius="5.5" width="12.0" />
                </effect>
             </TextArea>
-            <Label fx:id="label1" layoutX="161.0" layoutY="95.0" prefHeight="28.0" prefWidth="295.0" textFill="RED">
+            <Label fx:id="label1" alignment="CENTER" layoutX="132.0" layoutY="94.0" prefHeight="28.0" prefWidth="295.0" textFill="RED">
                <font>
                   <Font name="Arial" size="16.0" />
                </font>
@@ -108,7 +108,7 @@
                   <Image url="@Images/Private.png" />
                </image>
             </ImageView>
-            <TextArea fx:id="PrivKey" layoutX="627.0" layoutY="99.0" prefHeight="134.0" prefWidth="142.0">
+            <TextArea fx:id="PrivKey" editable="false" layoutX="627.0" layoutY="99.0" prefHeight="134.0" prefWidth="142.0">
                <font>
                   <Font name="Arial" size="20.0" />
                </font>
@@ -116,7 +116,7 @@
                   <InnerShadow height="12.0" radius="5.5" width="12.0" />
                </effect>
             </TextArea>
-            <TextArea fx:id="PubKey" layoutX="452.0" layoutY="99.0" prefHeight="134.0" prefWidth="142.0">
+            <TextArea fx:id="PubKey" editable="false" layoutX="452.0" layoutY="99.0" prefHeight="134.0" prefWidth="142.0">
                <font>
                   <Font name="Arial" size="20.0" />
                </font>
@@ -124,7 +124,7 @@
                   <InnerShadow height="12.0" radius="5.5" width="12.0" />
                </effect>
             </TextArea>
-            <TextArea fx:id="Decrypt" layoutX="467.0" layoutY="270.0" prefHeight="221.0" prefWidth="283.0">
+            <TextArea fx:id="Decrypt" editable="false" layoutX="467.0" layoutY="270.0" prefHeight="221.0" prefWidth="283.0">
                <font>
                   <Font name="Arial" size="20.0" />
                </font>

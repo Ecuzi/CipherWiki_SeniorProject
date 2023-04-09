@@ -42,7 +42,7 @@
       </AnchorPane>
    </top>
    <center>
-      <AnchorPane onMousePressed="#backButtonAction" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #FFFFFF;" BorderPane.alignment="CENTER" />
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #FFFFFF;" BorderPane.alignment="CENTER" />
    </center>
    <effect>
       <InnerShadow />
