@@ -9,7 +9,7 @@ import static java.lang.Integer.toHexString;
 public class Hashing_Encryption {
      String output;
     public Hashing_Encryption() {}
-    public  String Hashing_Encryption(String plainText) throws NoSuchAlgorithmException {
+    public String Hashing_Encryption(String plainText) throws NoSuchAlgorithmException {
         MessageDigest digest = MessageDigest.getInstance("SHA-256");        //Creating a digest object that uses the SHA-256 encryption algorithm
         byte[] encoded = digest.digest(plainText.getBytes(StandardCharsets.UTF_8));  //Converting the user generated plainText into an array of bytes
         output = bytesToHex(encoded);//Printing the output of the hexes from the bytes

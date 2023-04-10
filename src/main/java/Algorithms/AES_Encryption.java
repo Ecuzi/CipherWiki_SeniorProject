@@ -2,10 +2,10 @@ package Algorithms;
 
 import javax.crypto.*;
 import javax.crypto.spec.IvParameterSpec;
-import java.security.InvalidAlgorithmParameterException;
 import java.security.InvalidKeyException;
 import java.security.NoSuchAlgorithmException;
 import java.security.SecureRandom;
+import java.util.Arrays;
 import java.util.Base64;
 
 public class AES_Encryption {
@@ -20,9 +20,9 @@ public class AES_Encryption {
 
         SecretKey key = generateKey();
         keyUsed = key;
-        keyVisual = String.valueOf(key.getEncoded());
+        keyVisual = Arrays.toString(key.getEncoded());
         IvParameterSpec ivParameterSpec = generateIV();
-        IV = String.valueOf(ivParameterSpec.getIV());
+        IV = Arrays.toString(ivParameterSpec.getIV());
 
     }
 

@@ -6,6 +6,7 @@ import javax.crypto.IllegalBlockSizeException;
 import javax.crypto.NoSuchPaddingException;
 import java.nio.charset.StandardCharsets;
 import java.security.*;
+import java.util.Arrays;
 import java.util.Base64;
 
 public class RSA_Encryption {
@@ -14,7 +15,7 @@ public class RSA_Encryption {
     public String pubkey;
     public String privkey;
 
-    public RSA_Encryption() throws NoSuchAlgorithmException, IllegalBlockSizeException, BadPaddingException, InvalidKeyException, NoSuchPaddingException {
+    public RSA_Encryption() throws NoSuchAlgorithmException {
 
         KeyPairGenerator generator = KeyPairGenerator.getInstance("RSA");
         generator.initialize(2048);
@@ -23,8 +24,8 @@ public class RSA_Encryption {
         PublicKey publicKey = pair.getPublic();
         x = publicKey;
         y = privateKey;
-        pubkey = String.valueOf(publicKey.getEncoded());
-        privkey = String.valueOf(privateKey.getEncoded());
+        pubkey = Arrays.toString(publicKey.getEncoded());
+        privkey = Arrays.toString(privateKey.getEncoded());
     }
     /* Encrypt Message */
     public String encryptRSA(String plainText, PublicKey publicKey)
