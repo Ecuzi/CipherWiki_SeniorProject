@@ -17,140 +17,147 @@
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="660.0" prefWidth="792.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="interfaces.dataencryptionproject_sp25.AESUserController">
    <top>
-      <AnchorPane prefHeight="142.0" prefWidth="936.0" style="-fx-background-color: #5173c9;" BorderPane.alignment="CENTER">
-         <children>
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8d9dab" height="52.0" layoutX="-28.0" layoutY="90.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="819.0">
-               <effect>
-                  <InnerShadow radius="25.4775" width="82.91" />
-               </effect>
-            </Rectangle>
-            <Text layoutX="139.0" layoutY="62.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Advanced Encryption Standard (AES)" textAlignment="CENTER">
-               <font>
-                  <Font name="Arial Rounded MT Bold" size="30.0" />
-               </font>
-            </Text>
-            <ImageView fitHeight="37.0" fitWidth="56.0" layoutX="25.0" layoutY="98.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@Images/undo-back-return-button-png-3.png" />
-               </image>
-            </ImageView>
-            <Button fx:id="backButton" layoutX="24.0" layoutY="98.0" mnemonicParsing="false" onAction="#backButtonAction" opacity="0.0" prefHeight="37.0" prefWidth="37.0" text="Button">
-               <cursor>
-                  <Cursor fx:constant="HAND" />
-               </cursor>
-            </Button>
-         </children>
+      <AnchorPane prefHeight="142.0" prefWidth="936.0" style="-fx-background-color: #5173c9;"
+                  BorderPane.alignment="CENTER">
          <effect>
-            <InnerShadow blurType="GAUSSIAN" height="171.35" radius="66.0125" width="94.7" />
+            <InnerShadow blurType="GAUSSIAN" height="171.35" radius="66.0125" width="94.7"/>
          </effect>
+         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8d9dab" height="52.0" layoutX="-28.0" layoutY="90.0"
+                    stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="819.0">
+            <effect>
+               <InnerShadow radius="25.4775" width="82.91"/>
+            </effect>
+         </Rectangle>
+         <Text layoutX="139.0" layoutY="62.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0"
+               text="Advanced Encryption Standard (AES)" textAlignment="CENTER">
+            <font>
+               <Font name="Arial Rounded MT Bold" size="30.0"/>
+            </font>
+         </Text>
+         <ImageView fitHeight="37.0" fitWidth="56.0" layoutX="25.0" layoutY="98.0" pickOnBounds="true"
+                    preserveRatio="true">
+            <Image url="@Images/undo-back-return-button-png-3.png"/>
+         </ImageView>
+         <Button fx:id="backButton" layoutX="24.0" layoutY="98.0" mnemonicParsing="false" onAction="#backButtonAction"
+                 opacity="0.0" prefHeight="37.0" prefWidth="37.0" text="Button">
+            <cursor>
+               <Cursor fx:constant="HAND"/>
+            </cursor>
+         </Button>
       </AnchorPane>
    </top>
    <effect>
       <InnerShadow />
    </effect>
    <center>
-      <AnchorPane prefHeight="525.0" prefWidth="802.0" style="-fx-background-color: #FFFFFF;" BorderPane.alignment="CENTER">
-         <children>
-            <Label layoutX="30.0" layoutY="74.0" prefHeight="27.0" prefWidth="105.0" text="Plaintext">
-               <font>
-                  <Font name="Arial" size="20.0" />
-               </font>
-            </Label>
-            <TextField fx:id="plainText" layoutX="130.0" layoutY="62.0" prefHeight="54.0" prefWidth="275.0" promptText="Enter Your Text">
-               <effect>
-                  <InnerShadow height="11.0" radius="5.0" width="11.0" />
-               </effect>
-               <font>
-                  <Font name="Arial" size="17.0" />
-               </font>
-            </TextField>
-            <ImageView fitHeight="71.0" fitWidth="83.0" layoutX="12.0" layoutY="322.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@Images/key.png" />
-               </image>
-            </ImageView>
-            <Button layoutX="130.0" layoutY="155.0" mnemonicParsing="false" onAction="#EncryptButton" prefHeight="42.0" prefWidth="135.0" style="-fx-background-color: black;" text="Encrypt" textFill="WHITE">
-               <font>
-                  <Font name="Arial" size="17.0" />
-               </font>
-               <cursor>
-                  <Cursor fx:constant="HAND" />
-               </cursor>
-               <effect>
-                  <InnerShadow height="32.79" radius="18.1075" width="41.64">
-                     <color>
-                        <Color red="1.0" green="1.0" blue="1.0" />
-                     </color>
-                  </InnerShadow>
-               </effect>
-            </Button>
-            <Button layoutX="273.0" layoutY="155.0" mnemonicParsing="false" onAction="#DecryptButton" prefHeight="42.0" prefWidth="135.0" style="-fx-background-color: black;" text="Decrypt" textFill="WHITE">
-               <font>
-                  <Font name="Arial" size="17.0" />
-               </font>
-               <cursor>
-                  <Cursor fx:constant="HAND" />
-               </cursor>
-               <effect>
-                  <InnerShadow height="32.79" radius="18.1075" width="41.64">
-                     <color>
-                        <Color red="1.0" green="1.0" blue="1.0" />
-                     </color>
-                  </InnerShadow>
-               </effect>
-            </Button>
-            <TextArea fx:id="DisplayArea" editable="false" layoutX="295.0" layoutY="259.0" prefHeight="214.0" prefWidth="463.0">
-               <font>
-                  <Font name="Arial" size="20.0" />
-               </font>
-               <effect>
-                  <InnerShadow height="12.0" radius="5.5" width="12.0" />
-               </effect>
-            </TextArea>
-            <Label fx:id="label1" alignment="CENTER" layoutX="131.0" layoutY="116.0" prefHeight="28.0" prefWidth="273.0" textFill="RED" textOverrun="CLIP">
-               <font>
-                  <Font name="Arial" size="16.0" />
-               </font>
-            </Label>
-            <Label layoutX="474.0" layoutY="8.0" prefHeight="58.0" prefWidth="115.0" text="Initialization &#10;Vector (IV)">
-               <font>
-                  <Font name="Arial" size="20.0" />
-               </font>
-            </Label>
-            <Label layoutX="647.0" layoutY="13.0" prefHeight="58.0" prefWidth="115.0" text="Block Size" textAlignment="RIGHT">
-               <font>
-                  <Font name="Arial" size="20.0" />
-               </font>
-            </Label>
-            <TextArea fx:id="key" layoutX="104.0" layoutY="259.0" prefHeight="214.0" prefWidth="171.0">
-               <effect>
-                  <InnerShadow radius="6.7625" width="8.05" />
-               </effect>
-               <font>
-                  <Font name="Arial" size="21.0" />
-               </font>
-            </TextArea>
-            <TextArea fx:id="IVText" layoutX="435.0" layoutY="72.0" prefHeight="125.0" prefWidth="176.0">
-               <effect>
-                  <InnerShadow radius="6.7625" width="8.05" />
-               </effect>
-               <font>
-                  <Font name="Arial" size="19.0" />
-               </font>
-            </TextArea>
-            <TextArea fx:id="BlockText" layoutX="633.0" layoutY="72.0" prefHeight="125.0" prefWidth="125.0">
-               <effect>
-                  <InnerShadow radius="6.7625" width="8.05" />
-               </effect>
-               <font>
-                  <Font name="Arial" size="23.0" />
-               </font>
-            </TextArea>
-            <Label layoutX="479.0" layoutY="216.0" prefHeight="27.0" prefWidth="105.0" text="Output">
-               <font>
-                  <Font name="Arial" size="21.0" />
-               </font>
-            </Label>
-         </children></AnchorPane>
+      <AnchorPane prefHeight="525.0" prefWidth="802.0" style="-fx-background-color: #FFFFFF;"
+                  BorderPane.alignment="CENTER">
+         <Label layoutX="30.0" layoutY="74.0" prefHeight="27.0" prefWidth="105.0" text="Plaintext">
+            <font>
+               <Font name="Arial" size="20.0"/>
+            </font>
+         </Label>
+         <TextField fx:id="plainText" layoutX="130.0" layoutY="62.0" prefHeight="54.0" prefWidth="275.0"
+                    promptText="Enter Your Text">
+            <effect>
+               <InnerShadow height="11.0" radius="5.0" width="11.0"/>
+            </effect>
+            <font>
+               <Font name="Arial" size="17.0"/>
+            </font>
+         </TextField>
+         <ImageView fitHeight="71.0" fitWidth="83.0" layoutX="12.0" layoutY="322.0" pickOnBounds="true"
+                    preserveRatio="true">
+            <Image url="@Images/key.png"/>
+         </ImageView>
+         <Button layoutX="130.0" layoutY="155.0" mnemonicParsing="false" onAction="#EncryptButton" prefHeight="42.0"
+                 prefWidth="135.0" style="-fx-background-color: black;" text="Encrypt" textFill="WHITE">
+            <font>
+               <Font name="Arial" size="17.0"/>
+            </font>
+            <cursor>
+               <Cursor fx:constant="HAND"/>
+            </cursor>
+            <effect>
+               <InnerShadow height="32.79" radius="18.1075" width="41.64">
+                  <color>
+                     <Color red="1.0" green="1.0" blue="1.0"/>
+                  </color>
+               </InnerShadow>
+            </effect>
+         </Button>
+         <Button layoutX="273.0" layoutY="155.0" mnemonicParsing="false" onAction="#DecryptButton" prefHeight="42.0"
+                 prefWidth="135.0" style="-fx-background-color: black;" text="Decrypt" textFill="WHITE">
+            <font>
+               <Font name="Arial" size="17.0"/>
+            </font>
+            <cursor>
+               <Cursor fx:constant="HAND"/>
+            </cursor>
+            <effect>
+               <InnerShadow height="32.79" radius="18.1075" width="41.64">
+                  <color>
+                     <Color red="1.0" green="1.0" blue="1.0"/>
+                  </color>
+               </InnerShadow>
+            </effect>
+         </Button>
+         <TextArea fx:id="DisplayArea" editable="false" layoutX="295.0" layoutY="259.0" prefHeight="214.0"
+                   prefWidth="463.0">
+            <font>
+               <Font name="Arial" size="20.0"/>
+            </font>
+            <effect>
+               <InnerShadow height="12.0" radius="5.5" width="12.0"/>
+            </effect>
+         </TextArea>
+         <Label fx:id="label1" alignment="CENTER" layoutX="131.0" layoutY="116.0" prefHeight="28.0" prefWidth="273.0"
+                textFill="RED" textOverrun="CLIP">
+            <font>
+               <Font name="Arial" size="16.0"/>
+            </font>
+         </Label>
+         <Label layoutX="474.0" layoutY="8.0" prefHeight="58.0" prefWidth="115.0"
+                text="Initialization &#10;Vector (IV)">
+            <font>
+               <Font name="Arial" size="20.0"/>
+            </font>
+         </Label>
+         <Label layoutX="647.0" layoutY="13.0" prefHeight="58.0" prefWidth="115.0" text="Block Size"
+                textAlignment="RIGHT">
+            <font>
+               <Font name="Arial" size="20.0"/>
+            </font>
+         </Label>
+         <TextArea fx:id="key" layoutX="104.0" layoutY="259.0" prefHeight="214.0" prefWidth="171.0">
+            <effect>
+               <InnerShadow radius="6.7625" width="8.05"/>
+            </effect>
+            <font>
+               <Font name="Arial" size="21.0"/>
+            </font>
+         </TextArea>
+         <TextArea fx:id="IVText" layoutX="435.0" layoutY="72.0" prefHeight="125.0" prefWidth="176.0">
+            <effect>
+               <InnerShadow radius="6.7625" width="8.05"/>
+            </effect>
+            <font>
+               <Font name="Arial" size="19.0"/>
+            </font>
+         </TextArea>
+         <TextArea fx:id="BlockText" layoutX="633.0" layoutY="72.0" prefHeight="125.0" prefWidth="125.0">
+            <effect>
+               <InnerShadow radius="6.7625" width="8.05"/>
+            </effect>
+            <font>
+               <Font name="Arial" size="23.0"/>
+            </font>
+         </TextArea>
+         <Label layoutX="479.0" layoutY="216.0" prefHeight="27.0" prefWidth="105.0" text="Output">
+            <font>
+               <Font name="Arial" size="21.0"/>
+            </font>
+         </Label>
+      </AnchorPane>
    </center>
 </BorderPane>

@@ -9,12 +9,12 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.util.Objects;
 
 public class HomeController {
-
     @FXML
     void AESAction(ActionEvent event) throws IOException {
-        Parent guestViewParent = FXMLLoader.load(getClass().getResource("/AES.fxml"));
+        Parent guestViewParent = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/AES.fxml")));
         Scene guestScene = new Scene(guestViewParent);
 
         Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
@@ -25,7 +25,7 @@ public class HomeController {
 
     @FXML
     void CeaserButton(ActionEvent event) throws IOException {
-        Parent guestViewParent = FXMLLoader.load(getClass().getResource("/CaesarCipher.fxml"));
+        Parent guestViewParent = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/CaesarCipher.fxml")));
         Scene guestScene = new Scene(guestViewParent);
 
         Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
@@ -36,7 +36,7 @@ public class HomeController {
 
     @FXML
     void HashingAction(ActionEvent event) throws IOException {
-        Parent guestViewParent = FXMLLoader.load(getClass().getResource("/Hash.fxml"));
+        Parent guestViewParent = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/Hash.fxml")));
         Scene guestScene = new Scene(guestViewParent);
 
         Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
@@ -47,7 +47,7 @@ public class HomeController {
 
     @FXML
     void RSAAction(ActionEvent event) throws IOException {
-        Parent guestViewParent = FXMLLoader.load(getClass().getResource("/RSA.fxml"));
+        Parent guestViewParent = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/RSA.fxml")));
         Scene guestScene = new Scene(guestViewParent);
 
         Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
@@ -58,7 +58,7 @@ public class HomeController {
 
     @FXML
     void CreditAction(ActionEvent event) throws IOException {
-        Parent guestViewParent = FXMLLoader.load(getClass().getResource("/Credits.fxml"));
+        Parent guestViewParent = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/Credits.fxml")));
         Scene guestScene = new Scene(guestViewParent);
 
         Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
@@ -66,5 +66,4 @@ public class HomeController {
         window.setScene(guestScene);
         window.show();
     }
-
 }

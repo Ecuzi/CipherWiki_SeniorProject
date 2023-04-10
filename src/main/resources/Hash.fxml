@@ -13,59 +13,61 @@
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="724.0" prefWidth="781.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="interfaces.dataencryptionproject_sp25.HashController">
    <top>
-      <AnchorPane prefHeight="142.0" prefWidth="936.0" style="-fx-background-color: #5173c9;" BorderPane.alignment="CENTER">
-         <children>
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8d9dab" height="52.0" layoutX="-28.0" layoutY="90.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="809.0">
-               <effect>
-                  <InnerShadow radius="25.4775" width="82.91" />
-               </effect>
-            </Rectangle>
-            <Text layoutX="320.0" layoutY="59.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Hashing" textAlignment="CENTER">
-               <font>
-                  <Font name="Arial Rounded MT Bold" size="30.0" />
-               </font>
-            </Text>
-            <ImageView fitHeight="37.0" fitWidth="56.0" layoutX="25.0" layoutY="97.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@Images/undo-back-return-button-png-3.png" />
-               </image>
-            </ImageView>
-            <Button layoutX="24.0" layoutY="97.0" mnemonicParsing="false" onAction="#backButtonAction" opacity="0.0" prefHeight="37.0" prefWidth="37.0" text="Button">
-               <cursor>
-                  <Cursor fx:constant="HAND" />
-               </cursor>
-            </Button>
-            <Button layoutX="677.0" layoutY="99.0" mnemonicParsing="false" onAction="#TryAction" prefHeight="33.0" prefWidth="90.0" style="-fx-background-color: #FFFFFF;" text="Try It Out">
-               <font>
-                  <Font name="Arial Bold" size="14.0" />
-               </font>
-               <cursor>
-                  <Cursor fx:constant="HAND" />
-               </cursor>
-            </Button>
-         </children>
+      <AnchorPane prefHeight="142.0" prefWidth="936.0" style="-fx-background-color: #5173c9;"
+                  BorderPane.alignment="CENTER">
          <effect>
-            <InnerShadow blurType="GAUSSIAN" height="171.35" radius="66.0125" width="94.7" />
+            <InnerShadow blurType="GAUSSIAN" height="171.35" radius="66.0125" width="94.7"/>
          </effect>
+         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8d9dab" height="52.0" layoutX="-28.0" layoutY="90.0"
+                    stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="809.0">
+            <effect>
+               <InnerShadow radius="25.4775" width="82.91"/>
+            </effect>
+         </Rectangle>
+         <Text layoutX="320.0" layoutY="59.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Hashing"
+               textAlignment="CENTER">
+            <font>
+               <Font name="Arial Rounded MT Bold" size="30.0"/>
+            </font>
+         </Text>
+         <ImageView fitHeight="37.0" fitWidth="56.0" layoutX="25.0" layoutY="97.0" pickOnBounds="true"
+                    preserveRatio="true">
+            <Image url="@Images/undo-back-return-button-png-3.png"/>
+         </ImageView>
+         <Button layoutX="24.0" layoutY="97.0" mnemonicParsing="false" onAction="#backButtonAction" opacity="0.0"
+                 prefHeight="37.0" prefWidth="37.0" text="Button">
+            <cursor>
+               <Cursor fx:constant="HAND"/>
+            </cursor>
+         </Button>
+         <Button layoutX="677.0" layoutY="99.0" mnemonicParsing="false" onAction="#TryAction" prefHeight="33.0"
+                 prefWidth="90.0" style="-fx-background-color: #FFFFFF;" text="Try It Out">
+            <font>
+               <Font name="Arial Bold" size="14.0"/>
+            </font>
+            <cursor>
+               <Cursor fx:constant="HAND"/>
+            </cursor>
+         </Button>
       </AnchorPane>
    </top>
    <center>
-      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #FFFFFF;" BorderPane.alignment="CENTER">
-         <children>
-            <ImageView fitHeight="301.0" fitWidth="597.0" layoutX="103.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@Images/Hash.png" />
-               </image>
-               <effect>
-                  <InnerShadow height="22.48" radius="8.16" width="12.16" />
-               </effect>
-            </ImageView>
-            <Text layoutX="93.0" layoutY="349.0" lineSpacing="8.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hashing, first developed by Hans Peter Luhn at IBM in 1953, is a process of converting input data of arbitrary length into a fixed-length output known as a hash or message digest. Hash functions are one-way, meaning it is difficult, if not impossible, to reconstruct the input data from the hash value. A secure hash function should be collision-resistant, preimage-resistant, and resistant to length extension attacks. Hash functions are considered secure, and they are widely used for data integrity and security purposes, such as verifying the authenticity of files, passwords, and digital signatures. Unlike encryption algorithms, hashing does not use keys and is a one-way process." wrappingWidth="613.8045654296875">
-               <font>
-                  <Font name="Arial" size="16.0" />
-               </font>
-            </Text>
-         </children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #FFFFFF;"
+                  BorderPane.alignment="CENTER">
+         <ImageView fitHeight="301.0" fitWidth="597.0" layoutX="103.0" layoutY="24.0" pickOnBounds="true"
+                    preserveRatio="true">
+            <effect>
+               <InnerShadow height="22.48" radius="8.16" width="12.16"/>
+            </effect>
+            <Image url="@Images/Hash.png"/>
+         </ImageView>
+         <Text layoutX="93.0" layoutY="349.0" lineSpacing="8.0" strokeType="OUTSIDE" strokeWidth="0.0"
+               text="Hashing, first developed by Hans Peter Luhn at IBM in 1953, is a process of converting input data of arbitrary length into a fixed-length output known as a hash or message digest. Hash functions are one-way, meaning it is difficult, if not impossible, to reconstruct the input data from the hash value. A secure hash function should be collision-resistant, preimage-resistant, and resistant to length extension attacks. Hash functions are considered secure, and they are widely used for data integrity and security purposes, such as verifying the authenticity of files, passwords, and digital signatures. Unlike encryption algorithms, hashing does not use keys and is a one-way process."
+               wrappingWidth="613.8045654296875">
+            <font>
+               <Font name="Arial" size="16.0"/>
+            </font>
+         </Text>
       </AnchorPane>
    </center>
    <effect>

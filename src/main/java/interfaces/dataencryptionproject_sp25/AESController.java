@@ -8,18 +8,15 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.stage.Stage;
-
-
-
-
-
 import java.io.IOException;
+import java.util.Objects;
 
 public class AESController {
+    public Button backButton, tryButton;
 
     @FXML
     void TryAction(ActionEvent event) throws IOException {
-        Parent guestViewParent = FXMLLoader.load(getClass().getResource("/AESUser.fxml"));
+        Parent guestViewParent = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/AESUser.fxml")));
         Scene guestScene = new Scene(guestViewParent);
 
         Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
@@ -30,14 +27,12 @@ public class AESController {
 
     @FXML
     void backButtonAction(ActionEvent event) throws IOException {
-        Parent guestViewParent = FXMLLoader.load(getClass().getResource("/HomePage.fxml"));
+        Parent guestViewParent = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/HomePage.fxml")));
         Scene guestScene = new Scene(guestViewParent);
 
         Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
 
         window.setScene(guestScene);
         window.show();
-
     }
-
 }

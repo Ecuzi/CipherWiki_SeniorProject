@@ -108,7 +108,7 @@
                   <Image url="@Images/Private.png" />
                </image>
             </ImageView>
-            <TextArea fx:id="PrivKey" editable="false" layoutX="627.0" layoutY="99.0" prefHeight="134.0" prefWidth="142.0">
+            <TextArea fx:id="PrivateKey" editable="false" layoutX="627.0" layoutY="99.0" prefHeight="134.0" prefWidth="142.0">
                <font>
                   <Font name="Arial" size="20.0" />
                </font>

@@ -1,6 +1,5 @@
 package interfaces.dataencryptionproject_sp25;
 
-import Algorithms.CaesarCipher_Encryption;
 import Algorithms.Hashing_Encryption;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -8,25 +7,20 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.*;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.control.TextArea;
+import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.security.NoSuchAlgorithmException;
-
-
-import javafx.event.ActionEvent;
-import javafx.fxml.FXML;
-import javafx.scene.control.Button;
-import javafx.scene.input.MouseEvent;
+import java.util.Objects;
 
 public class HashUserController {
-
+    public Button backButton;
     @FXML
     private TextArea DisplayArea;
-
-
-
 
     @FXML
     private Label label1;
@@ -35,10 +29,9 @@ public class HashUserController {
 
     Hashing_Encryption Cipher = new Hashing_Encryption();
 
-
     @FXML
     void backButtonAction(ActionEvent event) throws IOException {
-        Parent guestViewParent = FXMLLoader.load(getClass().getResource("/Hash.fxml"));
+        Parent guestViewParent = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/Hash.fxml")));
         Scene guestScene = new Scene(guestViewParent);
 
         Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
@@ -47,21 +40,14 @@ public class HashUserController {
         window.show();
     }
 
-
     @FXML
-    void EncryptButton(ActionEvent event) throws NoSuchAlgorithmException {
-
-        if(plainText.getText().isBlank() == true) {
+    void EncryptButton() throws NoSuchAlgorithmException {
+        if(plainText.getText().isBlank())
             label1.setText("Please Enter Plaintext");
-            return;
-        }
         else {
             DisplayArea.setWrapText(true);
             DisplayArea.setText(Cipher.Hashing_Encryption(plainText.getText()));
-
         }
     }
-
-
 }
 

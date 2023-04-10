@@ -13,32 +13,33 @@
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="724.0" prefWidth="781.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="interfaces.dataencryptionproject_sp25.AESController">
    <top>
-      <AnchorPane prefHeight="142.0" prefWidth="936.0" style="-fx-background-color: #5173c9;" BorderPane.alignment="CENTER">
-         <children>
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8d9dab" height="52.0" layoutX="-28.0" layoutY="90.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="809.0">
-               <effect>
-                  <InnerShadow radius="25.4775" width="82.91" />
-               </effect>
-            </Rectangle>
-            <Text layoutX="333.0" layoutY="58.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Credits" textAlignment="CENTER">
-               <font>
-                  <Font name="Arial Rounded MT Bold" size="30.0" />
-               </font>
-            </Text>
-            <ImageView fitHeight="37.0" fitWidth="56.0" layoutX="25.0" layoutY="98.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@Images/undo-back-return-button-png-3.png" />
-               </image>
-            </ImageView>
-            <Button layoutX="24.0" layoutY="98.0" mnemonicParsing="false" onAction="#backButtonAction" opacity="0.0" prefHeight="37.0" prefWidth="37.0" text="Button">
-               <cursor>
-                  <Cursor fx:constant="HAND" />
-               </cursor>
-            </Button>
-         </children>
+      <AnchorPane prefHeight="142.0" prefWidth="936.0" style="-fx-background-color: #5173c9;"
+                  BorderPane.alignment="CENTER">
          <effect>
-            <InnerShadow blurType="GAUSSIAN" height="171.35" radius="66.0125" width="94.7" />
+            <InnerShadow blurType="GAUSSIAN" height="171.35" radius="66.0125" width="94.7"/>
          </effect>
+         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8d9dab" height="52.0" layoutX="-28.0" layoutY="90.0"
+                    stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="809.0">
+            <effect>
+               <InnerShadow radius="25.4775" width="82.91"/>
+            </effect>
+         </Rectangle>
+         <Text layoutX="333.0" layoutY="58.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Credits"
+               textAlignment="CENTER">
+            <font>
+               <Font name="Arial Rounded MT Bold" size="30.0"/>
+            </font>
+         </Text>
+         <ImageView fitHeight="37.0" fitWidth="56.0" layoutX="25.0" layoutY="98.0" pickOnBounds="true"
+                    preserveRatio="true">
+            <Image url="@Images/undo-back-return-button-png-3.png"/>
+         </ImageView>
+         <Button layoutX="24.0" layoutY="98.0" mnemonicParsing="false" onAction="#backButtonAction" opacity="0.0"
+                 prefHeight="37.0" prefWidth="37.0" text="Button">
+            <cursor>
+               <Cursor fx:constant="HAND"/>
+            </cursor>
+         </Button>
       </AnchorPane>
    </top>
    <center>

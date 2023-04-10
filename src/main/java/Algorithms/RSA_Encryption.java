@@ -39,14 +39,14 @@ public class RSA_Encryption {
         return Base64.getEncoder().encodeToString(encryptedMessageBytes);
     }
     /* Decrypt Message */
-    public static String decryptRSA(String plainText, PrivateKey privateKey) throws IllegalBlockSizeException, BadPaddingException, InvalidKeyException, NoSuchPaddingException, NoSuchAlgorithmException {
-        Cipher decryptCipher = Cipher.getInstance("RSA");
-        decryptCipher.init(Cipher.DECRYPT_MODE, privateKey);
-        byte[] secretMessageBytes = plainText.getBytes(StandardCharsets.UTF_8);
-        byte[] encryptedMessageBytes = decryptCipher.doFinal(Base64.getDecoder().decode(secretMessageBytes));
-
-        // Initialize the Cipher with a private key
-        byte[] decryptedMessageBytes = decryptCipher.doFinal(encryptedMessageBytes);
-        return Base64.getEncoder().encodeToString(decryptedMessageBytes);
-    }
+//    public static String decryptRSA(String plainText, PrivateKey privateKey) throws IllegalBlockSizeException, BadPaddingException, InvalidKeyException, NoSuchPaddingException, NoSuchAlgorithmException {
+//        Cipher decryptCipher = Cipher.getInstance("RSA");
+//        decryptCipher.init(Cipher.DECRYPT_MODE, privateKey);
+//        byte[] secretMessageBytes = plainText.getBytes(StandardCharsets.UTF_8);
+//        byte[] encryptedMessageBytes = decryptCipher.doFinal(Base64.getDecoder().decode(secretMessageBytes));
+//
+//        // Initialize the Cipher with a private key
+//        byte[] decryptedMessageBytes = decryptCipher.doFinal(encryptedMessageBytes);
+//        return Base64.getEncoder().encodeToString(decryptedMessageBytes);
+//    }
 }
