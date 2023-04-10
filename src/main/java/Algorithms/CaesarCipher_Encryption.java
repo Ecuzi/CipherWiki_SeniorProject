@@ -3,6 +3,7 @@ package Algorithms;
 public class CaesarCipher_Encryption {
     public CaesarCipher_Encryption(){}
 
+    /* Encrypt Plain Text */
     public String encrypt(String plainText, int key){
         key = key % 26;
         StringBuilder encrypted = new StringBuilder(); char index;
@@ -20,6 +21,7 @@ public class CaesarCipher_Encryption {
         }
         return encrypted.toString();
     }
+    /* Decrypt Plain Text */
     public String decrypt(String cipherText, int key){
         key = key % 26;
         StringBuilder decrypted = new StringBuilder(); char index;
@@ -37,7 +39,4 @@ public class CaesarCipher_Encryption {
         }
         return decrypted.toString();
     }
-
-
-
 }

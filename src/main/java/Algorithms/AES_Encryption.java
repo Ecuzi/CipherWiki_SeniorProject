@@ -26,18 +26,21 @@ public class AES_Encryption {
 
     }
 
+    /* Generate Key */
     public SecretKey generateKey() throws NoSuchAlgorithmException {
         KeyGenerator keygen = KeyGenerator.getInstance("AES");
         keygen.init(128);
         return keygen.generateKey();
     }
 
+    /* Generate IV Spec */
     public IvParameterSpec generateIV() {
         byte[] iv = new byte[16];
         new SecureRandom().nextBytes(iv);
         return new IvParameterSpec(iv);
     }
 
+    /* Encrypt Plain Text */
     public String encrypt(String algorithm, String plainText, SecretKey key)
             throws NoSuchAlgorithmException, NoSuchPaddingException, InvalidKeyException, BadPaddingException, IllegalBlockSizeException {
 
@@ -49,6 +52,7 @@ public class AES_Encryption {
         return Base64.getEncoder().encodeToString(cipherText);
     }
 
+    /* Decrypt Plain Text */
     public String decrypt(String algorithm, String cipherText, SecretKey key)
             throws NoSuchAlgorithmException, NoSuchPaddingException, InvalidKeyException, BadPaddingException, IllegalBlockSizeException {
 

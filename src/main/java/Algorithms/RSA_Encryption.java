@@ -26,14 +26,6 @@ public class RSA_Encryption {
         pubkey = String.valueOf(publicKey.getEncoded());
         privkey = String.valueOf(privateKey.getEncoded());
     }
-
-
-
-
-
-
-
-
     /* Encrypt Message */
     public String encryptRSA(String plainText, PublicKey publicKey)
             throws IllegalBlockSizeException, BadPaddingException, InvalidKeyException, NoSuchPaddingException, NoSuchAlgorithmException {
@@ -55,10 +47,5 @@ public class RSA_Encryption {
         // Initialize the Cipher with a private key
         byte[] decryptedMessageBytes = decryptCipher.doFinal(encryptedMessageBytes);
         return Base64.getEncoder().encodeToString(decryptedMessageBytes);
-
     }
-
-
-
-
 }

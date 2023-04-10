@@ -17,7 +17,6 @@ import java.io.IOException;
 
 public class AESController {
 
-
     @FXML
     void TryAction(ActionEvent event) throws IOException {
         Parent guestViewParent = FXMLLoader.load(getClass().getResource("/AESUser.fxml"));

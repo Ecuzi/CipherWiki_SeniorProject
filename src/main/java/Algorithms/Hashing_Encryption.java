@@ -15,6 +15,7 @@ public class Hashing_Encryption {
         output = bytesToHex(encoded);//Printing the output of the hexes from the bytes
         return output;
     }
+    //Bytes to Hex implementation
     private  String bytesToHex(byte... text){
         StringBuilder hexString = new StringBuilder(2 * text.length); //Since we're effectively changing a string to another String
         for (byte b : text) { //All long as the length is not 1 element long, convert every byte element into a hexadecimal
@@ -24,6 +25,4 @@ public class Hashing_Encryption {
         }
         return hexString.toString();
     }
-
-
 }
