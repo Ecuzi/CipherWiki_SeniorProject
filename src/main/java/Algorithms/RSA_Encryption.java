@@ -24,8 +24,8 @@ public class RSA_Encryption {
         PublicKey publicKey = pair.getPublic();
         x = publicKey;
         y = privateKey;
-        pubkey = Arrays.toString(publicKey.getEncoded());
-        privkey = Arrays.toString(privateKey.getEncoded());
+        pubkey = String.valueOf(publicKey.getEncoded());
+        privkey = String.valueOf(privateKey.getEncoded());
     }
     /* Encrypt Message */
     public String encryptRSA(String plainText, PublicKey publicKey)
