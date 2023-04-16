@@ -10,8 +10,8 @@ import java.io.IOException;
 import java.util.Objects;
 
 public class GUIStarter extends Application {
-    public static void main(String[] args) { // (does not need to be called main)
-        launch(); // call launch from within MyFX class
+    public static void main(String[] args) {
+        launch();
     }
     @Override
     public void start(Stage stage) throws IOException {
