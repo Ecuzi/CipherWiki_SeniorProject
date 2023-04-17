@@ -11,61 +11,51 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="724.0" prefWidth="781.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="interfaces.dataencryptionproject_sp25.RSAController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="interfaces.dataencryptionproject_sp25.RSAController">
    <top>
-      <AnchorPane prefHeight="142.0" prefWidth="936.0" style="-fx-background-color: #5173c9;"
-                  BorderPane.alignment="CENTER">
+      <AnchorPane prefHeight="142.0" prefWidth="936.0" style="-fx-background-color: #5173c9;" BorderPane.alignment="CENTER">
          <effect>
-            <InnerShadow blurType="GAUSSIAN" height="171.35" radius="66.0125" width="94.7"/>
+            <InnerShadow blurType="GAUSSIAN" height="171.35" radius="66.0125" width="94.7" />
          </effect>
-         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8d9dab" height="52.0" layoutX="-28.0" layoutY="90.0"
-                    stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="809.0">
+         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8d9dab" height="52.0" layoutX="2.0" layoutY="90.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="1280.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="90.0">
             <effect>
-               <InnerShadow radius="25.4775" width="82.91"/>
+               <InnerShadow radius="25.4775" width="82.91" />
             </effect>
          </Rectangle>
-         <Text layoutX="180.0" layoutY="59.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0"
-               text="Rivest-Shamir-Adleman (RSA)" textAlignment="CENTER">
+         <Text layoutX="423.0" layoutY="63.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Rivest-Shamir-Adleman (RSA)" textAlignment="CENTER" AnchorPane.bottomAnchor="72.671875" AnchorPane.leftAnchor="423.0" AnchorPane.rightAnchor="423.8974609375" AnchorPane.topAnchor="34.611328125">
             <font>
-               <Font name="Arial Rounded MT Bold" size="30.0"/>
+               <Font name="Arial Rounded MT Bold" size="30.0" />
             </font>
          </Text>
-         <ImageView fitHeight="37.0" fitWidth="56.0" layoutX="25.0" layoutY="97.0" pickOnBounds="true"
-                    preserveRatio="true">
-            <Image url="@Images/undo-back-return-button-png-3.png"/>
+         <ImageView fitHeight="37.0" fitWidth="56.0" layoutX="344.0" layoutY="98.0" pickOnBounds="true" preserveRatio="true">
+            <Image url="@Images/undo-back-return-button-png-3.png" />
          </ImageView>
-         <Button layoutX="24.0" layoutY="97.0" mnemonicParsing="false" onAction="#backButtonAction" opacity="0.0"
-                 prefHeight="37.0" prefWidth="37.0" text="Button">
+         <Button layoutX="343.0" layoutY="98.0" mnemonicParsing="false" onAction="#backButtonAction" opacity="0.0" prefHeight="37.0" prefWidth="37.0" text="Button" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="343.0" AnchorPane.rightAnchor="902.0" AnchorPane.topAnchor="98.0">
             <cursor>
-               <Cursor fx:constant="HAND"/>
+               <Cursor fx:constant="HAND" />
             </cursor>
          </Button>
-         <Button layoutX="677.0" layoutY="99.0" mnemonicParsing="false" onAction="#TryAction" prefHeight="33.0"
-                 prefWidth="90.0" style="-fx-background-color: #FFFFFF;" text="Try It Out">
+         <Button layoutX="850.0" layoutY="100.0" mnemonicParsing="false" onAction="#TryAction" prefHeight="33.0" prefWidth="90.0" style="-fx-background-color: #FFFFFF;" text="Try It Out">
             <font>
-               <Font name="Arial Bold" size="14.0"/>
+               <Font name="Arial Bold" size="14.0" />
             </font>
             <cursor>
-               <Cursor fx:constant="HAND"/>
+               <Cursor fx:constant="HAND" />
             </cursor>
          </Button>
       </AnchorPane>
    </top>
    <center>
-      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #FFFFFF;"
-                  BorderPane.alignment="CENTER">
-         <ImageView fitHeight="301.0" fitWidth="597.0" layoutX="103.0" layoutY="24.0" pickOnBounds="true"
-                    preserveRatio="true">
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #FFFFFF;" BorderPane.alignment="CENTER">
+         <ImageView fitHeight="301.0" fitWidth="597.0" layoutX="342.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="356.0733337402344" AnchorPane.leftAnchor="342.0" AnchorPane.rightAnchor="341.0" AnchorPane.topAnchor="22.0">
             <effect>
-               <InnerShadow height="22.48" radius="8.16" width="12.16"/>
+               <InnerShadow height="22.48" radius="8.16" width="12.16" />
             </effect>
-            <Image url="@Images/RSA1.png"/>
+            <Image url="@Images/RSA1.png" />
          </ImageView>
-         <Text layoutX="94.0" layoutY="357.0" lineSpacing="10.0" strokeType="OUTSIDE" strokeWidth="0.0"
-               text="RSA is an asymmetric encryption algorithm developed by Ron Rivest, Adi Shamir, and Leonard Adleman in 1977. It involves the use of a public key for encryption and a private key for decryption and is based on the complex mathematical problem of factoring large numbers into their prime factors. Although it is considered a secure encryption algorithm, its security is dependent on the size of the key used, with larger key sizes being recommended for optimal security. In summary, RSA is a widely used encryption algorithm that provides secure data transmission by using a public-private key pair."
-               wrappingWidth="613.8045654296875">
+         <Text layoutX="333.0" layoutY="332.0" lineSpacing="10.0" strokeType="OUTSIDE" strokeWidth="0.0" text="RSA is an asymmetric encryption algorithm developed by Ron Rivest, Adi Shamir, and Leonard Adleman in 1977. It involves the use of a public key for encryption and a private key for decryption and is based on the complex mathematical problem of factoring large numbers into their prime factors. Although it is considered a secure encryption algorithm, its security is dependent on the size of the key used, with larger key sizes being recommended for optimal security. In summary, RSA is a widely used encryption algorithm that provides secure data transmission by using a public-private key pair." textAlignment="CENTER" wrappingWidth="613.8045654296875" AnchorPane.bottomAnchor="123.8203125" AnchorPane.leftAnchor="332.8045654296875" AnchorPane.rightAnchor="333.1954345703125" AnchorPane.topAnchor="317.1796875">
             <font>
-               <Font name="Arial" size="16.0"/>
+               <Font name="Arial" size="16.0" />
             </font>
          </Text>
       </AnchorPane>
