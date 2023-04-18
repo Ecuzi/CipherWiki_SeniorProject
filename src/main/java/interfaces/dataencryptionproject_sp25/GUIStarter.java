@@ -18,7 +18,6 @@ public class GUIStarter extends Application {
         Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/HomePage.fxml")));
         stage.setResizable(false);
         stage.setTitle("Cipher Wiki!");
-        root.setCache(true);
         stage.setScene(new Scene(root,1280,800));
         stage.show();
     }
