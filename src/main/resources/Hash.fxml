@@ -27,15 +27,15 @@
                <Font name="Arial Rounded MT Bold" size="30.0" />
             </font>
          </Text>
-         <ImageView fitHeight="37.0" fitWidth="56.0" layoutX="348.0" layoutY="98.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="348.0" AnchorPane.rightAnchor="895.9249992370605" AnchorPane.topAnchor="98.0">
+         <ImageView fitHeight="37.0" fitWidth="56.0" layoutX="39.0" layoutY="97.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="8.0" AnchorPane.leftAnchor="39.0" AnchorPane.rightAnchor="1204.9249992370605" AnchorPane.topAnchor="97.0">
             <Image url="@Images/undo-back-return-button-png-3.png" />
          </ImageView>
-         <Button fx:id="backButton" layoutX="347.0" layoutY="98.0" mnemonicParsing="false" onAction="#backButtonAction" opacity="0.0" prefHeight="37.0" prefWidth="37.0" text="Button" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="348.0" AnchorPane.rightAnchor="895.9249992370605" AnchorPane.topAnchor="98.0">
+         <Button fx:id="backButton" layoutX="40.0" layoutY="96.0" mnemonicParsing="false" onAction="#backButtonAction" opacity="0.0" prefHeight="37.0" prefWidth="37.0" text="Button" AnchorPane.bottomAnchor="9.0" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="1203.9249992370605" AnchorPane.topAnchor="96.0">
             <cursor>
                <Cursor fx:constant="HAND" />
             </cursor>
          </Button>
-         <Button layoutX="850.0" layoutY="100.0" mnemonicParsing="false" onAction="#TryAction" prefHeight="33.0" prefWidth="90.0" style="-fx-background-color: #FFFFFF;" text="Try It Out">
+         <Button layoutX="1160.0" layoutY="100.0" mnemonicParsing="false" onAction="#TryAction" prefHeight="33.0" prefWidth="90.0" style="-fx-background-color: #FFFFFF;" text="Try It Out">
             <font>
                <Font name="Arial Bold" size="14.0" />
             </font>
@@ -47,15 +47,15 @@
    </top>
    <center>
       <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #FFFFFF;" BorderPane.alignment="CENTER">
-         <ImageView fitHeight="301.0" fitWidth="597.0" layoutX="343.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+         <ImageView fitHeight="368.0" fitWidth="771.0" layoutX="246.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
             <effect>
                <InnerShadow height="22.48" radius="8.16" width="12.16" />
             </effect>
             <Image url="@Images/Hash.png" />
          </ImageView>
-         <Text layoutX="333.0" layoutY="349.0" lineSpacing="8.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hashing, first developed by Hans Peter Luhn at IBM in 1953, is a process of converting input data of arbitrary length into a fixed-length output known as a hash or message digest. Hash functions are one-way, meaning it is difficult, if not impossible, to reconstruct the input data from the hash value. A secure hash function should be collision-resistant, preimage-resistant, and resistant to length extension attacks. Hash functions are considered secure, and they are widely used for data integrity and security purposes, such as verifying the authenticity of files, passwords, and digital signatures. Unlike encryption algorithms, hashing does not use keys and is a one-way process." textAlignment="CENTER" wrappingWidth="613.8045654296875">
+         <Text layoutX="81.0" layoutY="450.0" lineSpacing="10.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hashing, first developed by Hans Peter Luhn at IBM in 1953, is a process of converting input data of arbitrary length into a fixed-length output known as a hash or message digest. Hash functions are one-way, meaning it is difficult, if not impossible, to reconstruct the input data from the hash value. A secure hash function should be collision-resistant, preimage-resistant, and resistant to length extension attacks. Hash functions are considered secure, and they are widely used for data integrity and security purposes, such as verifying the authenticity of files, passwords, and digital signatures. Unlike encryption algorithms, hashing does not use keys and is a one-way process." textAlignment="CENTER" wrappingWidth="1112.4005279541016">
             <font>
-               <Font name="Arial" size="16.0" />
+               <Font name="Arial" size="21.0" />
             </font>
          </Text>
       </AnchorPane>
