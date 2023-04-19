@@ -24,9 +24,9 @@
                <InnerShadow radius="25.4775" width="82.91" />
             </effect>
          </Rectangle>
-         <ButtonBar layoutX="138.0" layoutY="95.0" prefHeight="43.0" prefWidth="1007.0">
+         <ButtonBar layoutX="4.0" layoutY="95.0" prefHeight="43.0" prefWidth="1252.0">
             <buttons>
-               <Button mnemonicParsing="false" onAction="#CeaserButton" style="-fx-background-color: #fcf8f0;" text="Caesar Cipher">
+               <Button mnemonicParsing="false" onAction="#CeaserButton" prefHeight="25.0" style="-fx-background-color: #fcf8f0;" text="Caesar Cipher">
                   <cursor>
                      <Cursor fx:constant="HAND" />
                   </cursor>
@@ -69,18 +69,18 @@
    </top>
    <left>
       <AnchorPane prefHeight="651.0" prefWidth="236.0" BorderPane.alignment="CENTER">
-         <ImageView fitHeight="146.0" fitWidth="211.0" layoutX="12.0" layoutY="128.0" pickOnBounds="true" preserveRatio="true">
+         <ImageView fitHeight="113.0" fitWidth="218.0" layoutX="8.0" layoutY="141.0" pickOnBounds="true" preserveRatio="true">
             <effect>
                <DropShadow />
             </effect>
             <Image url="@Images/Home2.png" />
          </ImageView>
-         <Text layoutX="53.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" text="  Fun Fact &#10; " wrappingWidth="120.04896545410156">
+         <Text layoutX="55.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="  Fun Fact &#10; " wrappingWidth="120.04896545410156">
             <font>
-               <Font name="Arial" size="21.0" />
+               <Font name="Arial Bold" size="21.0" />
             </font>
          </Text>
-         <Text layoutX="18.0" layoutY="292.0" lineSpacing="2.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cracking an encrypted message can take an incredibly long time, despite having the computational resources behind it (cworld). &#10;&#10;If you try to crack an encryption using 128-bit AES, the number of possible keys with 128 bits is 2 raised to the power of 128, or 3.4x1038, or 340 undecillion (cworld). " wrappingWidth="187.11224365234375">
+         <Text layoutX="20.0" layoutY="293.0" lineSpacing="8.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cracking an encrypted message can take an incredibly long time, despite having the computational resources behind it (cworld). &#10;&#10;If you try to crack an encryption using 128-bit AES, the number of possible keys with 128 bits is 2 raised to the power of 128, or 3.4x1038, or 340 undecillion (cworld). " wrappingWidth="187.11224365234375">
             <font>
                <Font name="Arial" size="14.0" />
             </font>
@@ -89,15 +89,15 @@
    </left>
    <center>
       <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #FFFFFF;" BorderPane.alignment="CENTER">
-         <Text layoutX="312.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data Encryption">
+         <Text layoutX="312.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data Encryption">
             <font>
                <Font name="Arial" size="26.0" />
             </font>
          </Text>
-         <ImageView fitHeight="168.0" fitWidth="346.0" layoutX="245.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+         <ImageView fitHeight="231.0" fitWidth="401.0" layoutX="202.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
             <Image url="@Images/Home1.png" />
          </ImageView>
-         <Text layoutX="153.0" layoutY="241.0" lineSpacing="2.5" strokeType="OUTSIDE" strokeWidth="0.0" text="&#9;Cryptography, the science of hiding messages and their meaning from prying eyes, has been around since the invention of writing. Its origins can be traced back to ancient Egypt, where the first encryption scheme involved a simple method of letter substitution. Today, encryption is a fundamental part of our daily lives, occurring every time a computer connects to the internet, and it happens without most people realizing it.  &#10;&#10;&#9;Encryption is essential to protect data transferred between two parties from being intercepted by cybercriminals. There are two types of encryption algorithms: symmetric and asymmetric. Symmetric encryption uses a private key to encrypt and decrypt data, while asymmetric encryption uses a separate public and private key. Decrypting an encrypted message can take a very long time, with some encryption methods taking quintillion (a billion billion) years to crack without prior knowledge of the key." textAlignment="CENTER" wrappingWidth="502.615966796875">
+         <Text layoutX="115.0" layoutY="300.0" lineSpacing="8.0" strokeType="OUTSIDE" strokeWidth="0.0" text="&#9;Cryptography, the science of hiding messages and their meaning from prying eyes, has been around since the invention of writing. Its origins can be traced back to ancient Egypt, where the first encryption scheme involved a simple method of letter substitution. Today, encryption is a fundamental part of our daily lives, occurring every time a computer connects to the internet, and it happens without most people realizing it.  &#10;&#10;&#9;Encryption is essential to protect data transferred between two parties from being intercepted by cybercriminals. There are two types of encryption algorithms: symmetric and asymmetric. Symmetric encryption uses a private key to encrypt and decrypt data, while asymmetric encryption uses a separate public and private key. Decrypting an encrypted message can take a very long time, with some encryption methods taking quintillion (a billion billion) years to crack without prior knowledge of the key." wrappingWidth="580.6575012207031">
             <font>
                <Font name="Arial" size="16.0" />
             </font>
@@ -106,7 +106,7 @@
    </center>
    <right>
       <AnchorPane prefHeight="651.0" prefWidth="236.0" BorderPane.alignment="CENTER">
-         <Button layoutX="56.0" layoutY="505.0" mnemonicParsing="false" onAction="#CreditAction" prefHeight="31.0" prefWidth="125.0" text="Credits">
+         <Button layoutX="56.0" layoutY="535.0" mnemonicParsing="false" onAction="#CreditAction" prefHeight="31.0" prefWidth="125.0" text="Credits">
             <font>
                <Font name="Arial" size="13.0" />
             </font>
@@ -114,7 +114,7 @@
                <Cursor fx:constant="HAND" />
             </cursor>
          </Button>
-         <Text layoutX="36.0" layoutY="-14.0" strokeType="OUTSIDE" strokeWidth="0.0" text="&#10;&#10;&#10;&#10;Senior Project &#10;&#10;Sharon Perry - 25&#10;&#10;Spring 2023&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;  Ethan Fitzgerald   &#10;&#10;Anthony Quarshie" textAlignment="CENTER" wrappingWidth="164.802734375">
+         <Text layoutX="36.0" layoutY="16.0" strokeType="OUTSIDE" strokeWidth="0.0" text="&#10;&#10;&#10;&#10;Senior Project &#10;&#10;Sharon Perry - 25&#10;&#10;Spring 2023&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;  Ethan Fitzgerald   &#10;&#10;Anthony Quarshie" textAlignment="CENTER" wrappingWidth="164.802734375">
             <font>
                <Font name="Arial" size="15.0" />
             </font>
