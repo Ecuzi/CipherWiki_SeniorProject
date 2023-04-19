@@ -2,31 +2,27 @@ package interfaces.dataencryptionproject_sp25;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
-import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 import java.io.IOException;
-import java.util.Objects;
 
-public class HashController {
+public class HashController extends GUIStarter{
+    public HashController() throws IOException {
+    }
+
     @FXML
-    void TryAction(ActionEvent event) throws IOException {
-        Parent guestViewParent = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/HashUser.fxml")));
-        Scene guestScene = new Scene(guestViewParent);
-
+    void TryAction(ActionEvent event) {
         Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
 
-        window.setScene(guestScene);
+        window.setScene(HASH_USER_SCENE);
         window.show();
     }
 
     @FXML
-    void backButtonAction(ActionEvent event) throws IOException {
-        Parent guestViewParent = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/HomePage.fxml")));
-        Scene guestScene = new Scene(guestViewParent);
+    void backButtonAction(ActionEvent event) {
+        Scene guestScene = new Scene(root);
 
         Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
 

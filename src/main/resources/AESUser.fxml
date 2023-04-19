@@ -51,7 +51,7 @@
                <Font name="Arial" size="20.0" />
             </font>
          </Label>
-         <TextField fx:id="plainText" layoutX="343.0" layoutY="68.0" prefHeight="54.0" prefWidth="275.0" promptText="Enter Your Text">
+         <TextField fx:id="plainText" layoutX="343.0" layoutY="80.0" prefHeight="54.0" prefWidth="275.0" promptText="Enter Your Text">
             <effect>
                <InnerShadow height="11.0" radius="5.0" width="11.0" />
             </effect>
