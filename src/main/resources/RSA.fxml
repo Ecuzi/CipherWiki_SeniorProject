@@ -27,15 +27,15 @@
                <Font name="Arial Rounded MT Bold" size="30.0" />
             </font>
          </Text>
-         <ImageView fitHeight="37.0" fitWidth="56.0" layoutX="344.0" layoutY="98.0" pickOnBounds="true" preserveRatio="true">
+         <ImageView fitHeight="37.0" fitWidth="56.0" layoutX="29.0" layoutY="98.0" pickOnBounds="true" preserveRatio="true">
             <Image url="@Images/undo-back-return-button-png-3.png" />
          </ImageView>
-         <Button layoutX="343.0" layoutY="98.0" mnemonicParsing="false" onAction="#backButtonAction" opacity="0.0" prefHeight="37.0" prefWidth="37.0" text="Button" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="343.0" AnchorPane.rightAnchor="902.0" AnchorPane.topAnchor="98.0">
+         <Button layoutX="28.0" layoutY="98.0" mnemonicParsing="false" onAction="#backButtonAction" opacity="0.0" prefHeight="37.0" prefWidth="37.0" text="Button" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="28.0" AnchorPane.rightAnchor="1217.0" AnchorPane.topAnchor="98.0">
             <cursor>
                <Cursor fx:constant="HAND" />
             </cursor>
          </Button>
-         <Button layoutX="850.0" layoutY="100.0" mnemonicParsing="false" onAction="#TryAction" prefHeight="33.0" prefWidth="90.0" style="-fx-background-color: #FFFFFF;" text="Try It Out">
+         <Button layoutX="1170.0" layoutY="100.0" mnemonicParsing="false" onAction="#TryAction" prefHeight="33.0" prefWidth="90.0" style="-fx-background-color: #FFFFFF;" text="Try It Out">
             <font>
                <Font name="Arial Bold" size="14.0" />
             </font>
@@ -46,16 +46,16 @@
       </AnchorPane>
    </top>
    <center>
-      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #FFFFFF;" BorderPane.alignment="CENTER">
-         <ImageView fitHeight="301.0" fitWidth="597.0" layoutX="342.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="356.0733337402344" AnchorPane.leftAnchor="342.0" AnchorPane.rightAnchor="341.0" AnchorPane.topAnchor="22.0">
+      <AnchorPane prefHeight="658.0" prefWidth="1204.0" style="-fx-background-color: #FFFFFF;">
+         <ImageView fitHeight="353.0" fitWidth="781.0" layoutX="279.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="273.5" AnchorPane.leftAnchor="279.0" AnchorPane.rightAnchor="263.6563720703125" AnchorPane.topAnchor="32.0">
             <effect>
                <InnerShadow height="22.48" radius="8.16" width="12.16" />
             </effect>
             <Image url="@Images/RSA1.png" />
          </ImageView>
-         <Text layoutX="333.0" layoutY="332.0" lineSpacing="10.0" strokeType="OUTSIDE" strokeWidth="0.0" text="RSA is an asymmetric encryption algorithm developed by Ron Rivest, Adi Shamir, and Leonard Adleman in 1977. It involves the use of a public key for encryption and a private key for decryption and is based on the complex mathematical problem of factoring large numbers into their prime factors. Although it is considered a secure encryption algorithm, its security is dependent on the size of the key used, with larger key sizes being recommended for optimal security. In summary, RSA is a widely used encryption algorithm that provides secure data transmission by using a public-private key pair." textAlignment="CENTER" wrappingWidth="613.8045654296875" AnchorPane.bottomAnchor="123.8203125" AnchorPane.leftAnchor="332.8045654296875" AnchorPane.rightAnchor="333.1954345703125" AnchorPane.topAnchor="317.1796875">
+         <Text layoutX="165.0" layoutY="443.0107421875" lineSpacing="10.0" strokeType="OUTSIDE" strokeWidth="0.0" text="RSA is an asymmetric encryption algorithm developed by Ron Rivest, Adi Shamir, and Leonard Adleman in 1977. It involves the use of a public key for encryption and a private key for decryption and is based on the complex mathematical problem of factoring large numbers into their prime factors. Although it is considered a secure encryption algorithm, its security is dependent on the size of the key used, with larger key sizes being recommended for optimal security. In summary, RSA is a widely used encryption algorithm that provides secure data transmission by using a public-private key pair." wrappingWidth="1003.31022679035" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="165.0" AnchorPane.rightAnchor="127.0" AnchorPane.topAnchor="424.0">
             <font>
-               <Font name="Arial" size="16.0" />
+               <Font name="Arial" size="21.0" />
             </font>
          </Text>
       </AnchorPane>
