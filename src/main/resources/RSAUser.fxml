@@ -23,15 +23,15 @@
                   <InnerShadow radius="25.4775" width="82.91" />
                </effect>
             </Rectangle>
-            <Text layoutX="423.0" layoutY="63.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Rivest-Shamir-Adleman (RSA)" textAlignment="CENTER" AnchorPane.bottomAnchor="72.671875" AnchorPane.leftAnchor="423.0" AnchorPane.rightAnchor="423.8974609375" AnchorPane.topAnchor="34.611328125">
+            <Text layoutX="434.0" layoutY="63.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Rivest-Shamir-Adleman (RSA)" textAlignment="CENTER" AnchorPane.bottomAnchor="72.671875" AnchorPane.leftAnchor="434.0" AnchorPane.rightAnchor="412.8974609375" AnchorPane.topAnchor="34.611328125">
                <font>
                   <Font name="Arial Rounded MT Bold" size="30.0" />
                </font>
             </Text>
-            <ImageView fitHeight="37.0" fitWidth="56.0" layoutX="344.0" layoutY="98.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="37.0" fitWidth="56.0" layoutX="21.0" layoutY="96.0" pickOnBounds="true" preserveRatio="true">
                <Image url="@Images/undo-back-return-button-png-3.png" />
             </ImageView>
-            <Button layoutX="343.0" layoutY="98.0" mnemonicParsing="false" onAction="#backButtonAction" opacity="0.0" prefHeight="37.0" prefWidth="37.0" text="Button" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="343.0" AnchorPane.rightAnchor="902.0" AnchorPane.topAnchor="98.0">
+            <Button layoutX="21.0" layoutY="98.0" mnemonicParsing="false" onAction="#backButtonAction" opacity="0.0" prefHeight="37.0" prefWidth="37.0" text="Button" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="21.0" AnchorPane.rightAnchor="1224.0" AnchorPane.topAnchor="98.0">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
@@ -48,12 +48,12 @@
    <center>
       <AnchorPane prefHeight="525.0" prefWidth="802.0" style="-fx-background-color: #FFFFFF;" BorderPane.alignment="CENTER">
          <children>
-            <Label layoutX="427.0" layoutY="103.0" prefHeight="27.0" prefWidth="105.0" text="Plaintext" textAlignment="CENTER">
+            <Label layoutX="201.0" layoutY="147.0" prefHeight="27.0" prefWidth="105.0" text="Plaintext" textAlignment="CENTER">
                <font>
-                  <Font name="Arial" size="20.0" />
+                  <Font name="Arial" size="23.0" />
                </font>
             </Label>
-            <TextField fx:id="plainText" layoutX="329.0" layoutY="129.0" prefHeight="42.0" prefWidth="279.0" promptText="Enter Your Text">
+            <TextField fx:id="plainText" layoutX="329.0" layoutY="139.0" prefHeight="45.0" prefWidth="287.0" promptText="Enter Your Text">
                <effect>
                   <InnerShadow height="11.0" radius="5.0" width="11.0" />
                </effect>
@@ -61,12 +61,12 @@
                   <Font name="Arial" size="17.0" />
                </font>
             </TextField>
-            <ImageView fitHeight="113.0" fitWidth="84.0" layoutX="841.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="111.0" fitWidth="112.0" layoutX="923.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@Images/Public%20Key.png" />
+                  <Image url="@Images/PublicKey.png" />
                </image>
             </ImageView>
-            <Button layoutX="328.0" layoutY="191.0" mnemonicParsing="false" onAction="#EncryptButton" prefHeight="42.0" prefWidth="129.0" text="Encrypt">
+            <Button layoutX="328.0" layoutY="221.0" mnemonicParsing="false" onAction="#EncryptButton" prefHeight="42.0" prefWidth="137.0" text="Encrypt">
                <font>
                   <Font name="Arial" size="17.0" />
                </font>
@@ -77,7 +77,7 @@
                   <InnerShadow height="3.31" radius="3.365" width="12.15" />
                </effect>
             </Button>
-            <Button layoutX="479.0" layoutY="191.0" mnemonicParsing="false" onAction="#DecryptButton" prefHeight="42.0" prefWidth="129.0" text="Decrypt">
+            <Button layoutX="477.0" layoutY="221.0" mnemonicParsing="false" onAction="#DecryptButton" prefHeight="42.0" prefWidth="139.0" text="Decrypt">
                <font>
                   <Font name="Arial" size="17.0" />
                </font>
@@ -88,7 +88,7 @@
                   <InnerShadow height="3.31" radius="3.365" width="12.15" />
                </effect>
             </Button>
-            <TextArea fx:id="Encrypt" editable="false" layoutX="327.0" layoutY="275.0" prefHeight="221.0" prefWidth="283.0">
+            <TextArea fx:id="Encrypt" editable="false" layoutX="327.0" layoutY="335.0" prefHeight="249.0" prefWidth="340.0">
                <font>
                   <Font name="Arial" size="20.0" />
                </font>
@@ -96,17 +96,17 @@
                   <InnerShadow height="12.0" radius="5.5" width="12.0" />
                </effect>
             </TextArea>
-            <Label fx:id="label1" alignment="CENTER" layoutX="132.0" layoutY="94.0" prefHeight="28.0" prefWidth="295.0" textFill="RED">
+            <Label fx:id="label1" alignment="CENTER" layoutX="327.0" layoutY="188.0" prefHeight="28.0" prefWidth="295.0" textFill="RED">
                <font>
                   <Font name="Arial" size="16.0" />
                </font>
             </Label>
-            <ImageView fitHeight="113.0" fitWidth="84.0" layoutX="663.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="111.0" fitWidth="112.0" layoutX="755.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@Images/Private.png" />
                </image>
             </ImageView>
-            <TextArea fx:id="PrivateKey" editable="false" layoutX="812.0" layoutY="116.0" prefHeight="134.0" prefWidth="142.0">
+            <TextArea fx:id="PrivateKey" editable="false" layoutX="906.0" layoutY="137.0" prefHeight="142.0" prefWidth="159.0">
                <font>
                   <Font name="Arial" size="20.0" />
                </font>
@@ -114,7 +114,7 @@
                   <InnerShadow height="12.0" radius="5.5" width="12.0" />
                </effect>
             </TextArea>
-            <TextArea fx:id="PubKey" editable="false" layoutX="634.0" layoutY="116.0" prefHeight="134.0" prefWidth="142.0">
+            <TextArea fx:id="PubKey" editable="false" layoutX="711.0" layoutY="137.0" prefHeight="142.0" prefWidth="159.0">
                <font>
                   <Font name="Arial" size="20.0" />
                </font>
@@ -122,7 +122,7 @@
                   <InnerShadow height="12.0" radius="5.5" width="12.0" />
                </effect>
             </TextArea>
-            <TextArea fx:id="Decrypt" editable="false" layoutX="648.0" layoutY="275.0" prefHeight="221.0" prefWidth="283.0">
+            <TextArea fx:id="Decrypt" editable="false" layoutX="727.0" layoutY="335.0" prefHeight="249.0" prefWidth="340.0">
                <font>
                   <Font name="Arial" size="20.0" />
                </font>
@@ -130,9 +130,9 @@
                   <InnerShadow height="12.0" radius="5.5" width="12.0" />
                </effect>
             </TextArea>
-            <Label alignment="CENTER" layoutX="416.0" layoutY="248.0" prefHeight="27.0" prefWidth="105.0" text="Ciphertext">
+            <Label alignment="CENTER" layoutX="444.0" layoutY="298.0" prefHeight="27.0" prefWidth="105.0" text="Ciphertext">
                <font>
-                  <Font name="Arial" size="20.0" />
+                  <Font name="Arial" size="23.0" />
                </font>
             </Label>
          </children></AnchorPane>
