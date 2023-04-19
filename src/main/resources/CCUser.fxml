@@ -30,10 +30,10 @@
                <Font name="Arial Rounded MT Bold" size="30.0" />
             </font>
          </Text>
-         <ImageView fitHeight="37.0" fitWidth="56.0" layoutX="344.0" layoutY="98.0" pickOnBounds="true" preserveRatio="true">
+         <ImageView fitHeight="37.0" fitWidth="56.0" layoutX="14.0" layoutY="98.0" pickOnBounds="true" preserveRatio="true">
             <Image url="@Images/undo-back-return-button-png-3.png" />
          </ImageView>
-         <Button layoutX="343.0" layoutY="98.0" mnemonicParsing="false" onAction="#backButtonAction" opacity="0.0" prefHeight="37.0" prefWidth="37.0" text="Button" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="343.0" AnchorPane.rightAnchor="902.0" AnchorPane.topAnchor="98.0">
+         <Button layoutX="14.0" layoutY="96.0" mnemonicParsing="false" onAction="#backButtonAction" opacity="0.0" prefHeight="37.0" prefWidth="37.0" text="Button" AnchorPane.bottomAnchor="9.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="1231.0" AnchorPane.topAnchor="96.0">
             <cursor>
                <Cursor fx:constant="HAND" />
             </cursor>
@@ -45,12 +45,12 @@
    </effect>
    <center>
       <AnchorPane prefHeight="525.0" prefWidth="802.0" style="-fx-background-color: #FFFFFF;" BorderPane.alignment="CENTER">
-         <Label layoutX="399.0" layoutY="76.0" prefHeight="27.0" prefWidth="105.0" text="Plaintext">
+         <Label layoutX="383.0" layoutY="65.0" prefHeight="27.0" prefWidth="105.0" text="Plaintext">
             <font>
-               <Font name="Arial" size="20.0" />
+               <Font name="Arial" size="24.0" />
             </font>
          </Label>
-         <TextField fx:id="plainText" layoutX="503.0" layoutY="69.0" prefHeight="42.0" prefWidth="274.0" promptText="Enter Your Text">
+         <TextField fx:id="plainText" layoutX="503.0" layoutY="49.0" prefHeight="58.0" prefWidth="274.0" promptText="Enter Your Text">
             <effect>
                <InnerShadow height="11.0" radius="5.0" width="11.0" />
             </effect>
@@ -58,7 +58,7 @@
                <Font name="Arial" size="17.0" />
             </font>
          </TextField>
-         <TextField fx:id="key" layoutX="504.0" layoutY="144.0" prefHeight="44.0" prefWidth="57.0" promptText="Key">
+         <TextField fx:id="key" layoutX="504.0" layoutY="144.0" prefHeight="58.0" prefWidth="100.0" promptText="Key">
             <font>
                <Font name="Arial" size="17.0" />
             </font>
@@ -66,10 +66,10 @@
                <InnerShadow height="11.0" radius="5.0" width="11.0" />
             </effect>
          </TextField>
-         <ImageView fitHeight="76.0" fitWidth="56.0" layoutX="412.0" layoutY="138.0" pickOnBounds="true" preserveRatio="true">
+         <ImageView fitHeight="71.0" fitWidth="73.0" layoutX="392.0" layoutY="141.0" pickOnBounds="true" preserveRatio="true">
             <Image url="@Images/key.png" />
          </ImageView>
-         <Button layoutX="503.0" layoutY="222.0" mnemonicParsing="false" onAction="#EncryptButton" prefHeight="42.0" prefWidth="86.0" text="Encrypt">
+         <Button layoutX="503.0" layoutY="222.0" mnemonicParsing="false" onAction="#EncryptButton" prefHeight="58.0" prefWidth="119.0" text="Encrypt">
             <font>
                <Font name="Arial" size="17.0" />
             </font>
@@ -80,7 +80,7 @@
                <InnerShadow height="3.31" radius="3.365" width="12.15" />
             </effect>
          </Button>
-         <Button layoutX="597.0" layoutY="222.0" mnemonicParsing="false" onAction="#DecryptButton" prefHeight="42.0" prefWidth="86.0" text="Decrypt">
+         <Button layoutX="658.0" layoutY="222.0" mnemonicParsing="false" onAction="#DecryptButton" prefHeight="58.0" prefWidth="119.0" text="Decrypt">
             <font>
                <Font name="Arial" size="17.0" />
             </font>
@@ -91,7 +91,7 @@
                <InnerShadow height="3.31" radius="3.365" width="12.15" />
             </effect>
          </Button>
-         <TextArea fx:id="DisplayArea" editable="false" layoutX="314.0" layoutY="310.0" prefHeight="168.0" prefWidth="652.0">
+         <TextArea fx:id="DisplayArea" editable="false" layoutX="163.0" layoutY="310.0" prefHeight="282.0" prefWidth="955.0">
             <font>
                <Font name="Arial" size="20.0" />
             </font>
