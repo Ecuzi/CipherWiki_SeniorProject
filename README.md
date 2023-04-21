@@ -1,4 +1,4 @@
-# CipherWiki_Project
+# CipherWiki Project
 Informational Brochure for Data Encryption that's interactive with users. 
 
 
