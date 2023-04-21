@@ -6,5 +6,5 @@ Data is the new oil they say, because of its importance. It needs to be well pro
 
 ## Download our interactive programs:
 
-### [MacOS JAR](https://github.com/Ecuzi/CipherWiki_SeniorProject/releases/tag/MacOS)
-### [Windows Executable](https://github.com/Ecuzi/CipherWiki_SeniorProject/releases/tag/Windows)
+### [MacOS JAR](https://github.com/Ecuzi/CipherWiki_SeniorProject/releases/download/MacOS/CipherWiki.jar)
+### [Windows Executable](https://github.com/Ecuzi/CipherWiki_SeniorProject/releases/download/Windows/CipherWiki.exe)
